@@ -1,9 +1,6 @@
 #/bin/bash
 set -ex
 
-# change ubuntu password for console access
-echo -e "ubuntu\nubuntu" | sudo passwd ubuntu
-
 mkdir -p /etc/polipo
 cat > /etc/polipo/config <<EOF
 logSyslog = true
